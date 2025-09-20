@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobile_feature/pages/camera.dart';
+import 'package:flutter_mobile_feature/pages/gpsAndMap.dart';
+import 'package:flutter_mobile_feature/pages/map.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,6 +24,12 @@ class _HomePageState extends State<HomePage> {
                 Get.to(CameraPage());
               },
               child: Text('Camera'),
+            ),
+            FilledButton(
+              onPressed: () {
+                Get.to(GPSandMapPage());
+              },
+              child: Text('GPS and MAP'),
             ),
           ],
         ),
